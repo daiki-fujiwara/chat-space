@@ -22,6 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
 # Chat space DB設計
 ## usersテーブル
 |Column|Type|Options|
@@ -45,10 +46,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
-|imteger|null: false, foreign_key: true|
-### Association
-- belongs_to :usrs
-- belongs_to :groupsage|string||
+|image|string||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
@@ -59,4 +57,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
-|group_id|in
+|group_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :usrs
+- belongs_to :groups
