@@ -1,0 +1,20 @@
+.side-bar
+  .side-bar__user-name
+    .side-bar__user-name--top-items
+      %p.name 藤原大輝
+      .side-bar__user-name--top-items__icons
+        = link_to "#", class:"icon" do
+          = icon('fas', 'edit')
+        = link_to "#", class:"icon" do
+          = icon('fa', 'cog')
+    
+  .side-bar__group-list
+    = link_to "#", class: "group" do
+      .group__group-name
+        Ruby
+      .group__new-message
+        こんばんは
+      .group__group-name
+        HTML
+      .group__new-message
+        こんにちは
