@@ -11,10 +11,12 @@
             = icon('fa', 'cog', class: 'icon-color')
     
   .side-bar__group-list
-    - current_user.groups.each do |group|
-      .group
-        = link_to '#' do
-          .group__group-name
-            = group.name 
-          .group__new-message
-            メッセージはまだありません。  
+    = link_to "#", class: "group" do
+      .group__group-name
+        Ruby
+      .group__new-message
+        こんばんは
+      .group__group-name
+        HTML
+      .group__new-message
+        こんにちは
