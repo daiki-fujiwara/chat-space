@@ -11,13 +11,12 @@
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
-      .name {
-        font-size: 16px;
-        color:$font-color;
-        font-weight: bold;
-      }
+      font-size: 16px;
+      color:$font-color;
+      font-weight: bold;
       &__icons {
-        .icon {
+        display: flex;
+        .icon-color {
           color: $font-color;
           text-align: right;
           display: inline-block;
