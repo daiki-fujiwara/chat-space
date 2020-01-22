@@ -1,12 +1,14 @@
 .side-bar
   .side-bar__user-name
     .side-bar__user-name--top-items
-      %p.name 藤原大輝
-      .side-bar__user-name--top-items__icons
-        = link_to "#", class:"icon" do
-          = icon('fas', 'edit')
-        = link_to "#", class:"icon" do
-          = icon('fa', 'cog')
+      = current_user.name
+      %ul.side-bar__user-name--top-items__icons
+        %li.icon
+          = link_to do
+            = icon('fas', 'edit', class: 'icon-color')
+        %li.icon
+          = link_to edit_user_path(current_user) do
+            = icon('fa', 'cog', class: 'icon-color')
     
   .side-bar__group-list
     = link_to "#", class: "group" do
