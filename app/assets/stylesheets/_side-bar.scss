@@ -29,20 +29,18 @@
   &__group-list {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
-    position: relative;
+
     .group {
-      color: $font-color;
-      text-decoration: none;
-      position: absolute;
-      left: 20px;
-      top: 20px;
+      padding-top: 20px;
+      padding-left: 20px;
       &__group-name {
+        color: $font-color;
         font-size: 15px;
       }
       &__new-message {
+        color: $font-color;
         margin-top: 5px;
         font-size: 11px;
-        margin-bottom:40px;
       }
     }
   }
