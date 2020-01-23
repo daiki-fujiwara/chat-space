@@ -4,7 +4,7 @@
       = current_user.name
       %ul.side-bar__user-name--top-items__icons
         %li.icon
-          = link_to do
+          = link_to new_group_path do
             = icon('fas', 'edit', class: 'icon-color')
         %li.icon
           = link_to edit_user_path(current_user) do
@@ -19,3 +19,6 @@
               = group.name 
           .group__new-message
             %a.under-line メッセージはまだありません。  
+              = group.name 
+          .group__new-message
+            メッセージはまだありません。
