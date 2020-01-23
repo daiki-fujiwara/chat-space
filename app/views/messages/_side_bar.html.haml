@@ -15,6 +15,10 @@
       .group
         = link_to '#' do
           .group__group-name
-            = group.name 
+            %a.under-line 
+              = group.name 
           .group__new-message
-            メッセージはまだありません。  
+            %a.under-line メッセージはまだありません。  
+              = group.name 
+          .group__new-message
+            メッセージはまだありません。

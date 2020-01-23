@@ -36,11 +36,17 @@
       &__group-name {
         color: $font-color;
         font-size: 15px;
+        .under-line {
+          text-decoration: none;
+        }
       }
       &__new-message {
         color: $font-color;
         margin-top: 5px;
         font-size: 11px;
+        .under-line {
+          text-decoration: none;
+        }
       }
     }
   }
