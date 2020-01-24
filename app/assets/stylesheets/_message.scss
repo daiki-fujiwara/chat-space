@@ -1,0 +1,25 @@
+.messages {
+  .message {
+    padding-top: 46px;
+    padding-left: 40px;
+    &__user-data {
+      display: flex;
+      padding-bottom: 12px;
+      &--talker {
+        color: #333333;
+        font-size: 16px;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+      &--date {
+        color: #999999;
+        font-size: 12px;
+      }
+    }
+    &__content {
+      display: block;
+      color: #434a54;
+      font-size: 14px;
+    }
+  }
+}
