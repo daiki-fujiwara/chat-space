@@ -1,13 +1,12 @@
-.messages
-  .message{data: {message: {id: message.id}}}
-    .message__user-data
-      .message__user-data--talker
-        = message.user.name
-      .message__user-data--date
-        = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-    .message__content
-      .message__content--text
-        - if message.content.present?
-          = message.content
-      .message__content--image
-        = image_tag message.image.url if message.image.present?
+.message{data: {message: {id: message.id}}}
+  .message__user-data
+    .message__user-data--talker
+      = message.user.name
+    .message__user-data--date
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  .message__content
+    .message__content--text
+      - if message.content.present?
+        = message.content
+    .message__content--image
+      = image_tag message.image.url if message.image.present?
